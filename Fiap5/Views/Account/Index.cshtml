@@ -1,0 +1,15 @@
+﻿@model Fiap5.Controllers.User
+@{
+    ViewData["Title"] = "Unauthorized";
+}
+
+<h2>Unauthorized</h2>
+<form method="post">
+    <label asp-for="UserName" />
+    <input asp-for="UserName" />
+    <br /> 
+    <label asp-for="Password" />
+    
+    <input asp-for="Password" />
+    <input type="submit" name="" value="Ok" />
+</form>
