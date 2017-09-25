@@ -1,0 +1,19 @@
+﻿@model  FiapSecurity.Models.Pessoa
+@{
+    ViewData["Title"] = "About";
+}
+<h2>@ViewData["Title"]</h2>
+<h3>@ViewData["Message"]</h3>
+
+@*<form asp-action="RequestForgery" method="post" asp-antiforgery="false">
+
+    <input type="text" asp-for="Id" />
+    <input type="text" asp-for="Nome" />
+    <input type="submit" name="name" value="salvar" />
+</form>*@
+<form action="/home/RequestForgery" method="post">
+
+    <input type="text" asp-for="Id" />
+    <input type="text" asp-for="Nome" />
+    <input type="submit" name="name" value="salvar" />
+</form>
